@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,18 +36,18 @@ body {
 }
 
 .app-border {
- background-color: rgb(61, 76, 58);
- opacity: 0.9;
+ background-color: rgb(36, 65, 62);
+ opacity: 0.95;
  padding: 30px 50px;
  border-radius: 24px;
- border-bottom: 10px solid #0000002a;
+ border-bottom: 10px solid #0000005c;
 }
 
 .app-title {
   border-radius: 16px;
   text-align: center;
   margin-bottom: 25px;
-  font-family:"Arial, Helvetica, sans-serif";
+  font-family: "Uncial Antiqua";
   font-size: 50px;
   color: #ffffff;
   text-shadow: 0px 1px #0000002a; 
@@ -65,6 +67,8 @@ body {
   display: grid;
   border-bottom: 1px solid #0000003e;
   border-right: 1px solid #0000003e;
+  opacity: 0.6;
+
 }
 
 /* footer styles */
@@ -75,7 +79,7 @@ body {
 .footer,
 .footer a,
 .footer hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
   font-family: 'Helvetica';
   font-size: 18px;
   text-decoration: none;
