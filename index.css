@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,15 +10,17 @@ body {
   font-family: "Helvetica, sans-serif";
 }
 
-/*Background Photo by Ivan Aleksic on Unsplash: https://unsplash.com/photos/PDRFeeDniCk*/
 
 .window {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   padding: 30px;
+  
+  /*Background Photo by Ivan Aleksic on Unsplash: https://unsplash.com/photos/PDRFeeDniCk*/
   background: url(./backround.jpg) no-repeat center center/cover;
 
 }
@@ -36,8 +38,11 @@ body {
 }
 
 .app-border {
- background-color: rgb(36, 65, 62);
- opacity: 0.95;
+/*Photo by engin akyurt on Unsplash*/
+background: url(./wood.jpg) no-repeat center center/cover;
+position: relative;
+z-index: 2;
+/*background-color: rgb(36, 65, 62);*/
  padding: 30px 50px;
  border-radius: 24px;
  border-bottom: 10px solid #0000005c;
@@ -47,7 +52,8 @@ body {
   border-radius: 16px;
   text-align: center;
   margin-bottom: 25px;
-  font-family: "Uncial Antiqua";
+  font-family: "Fredericka the Great";
+  font-weight: 700;
   font-size: 50px;
   color: #ffffff;
   text-shadow: 0px 1px #0000002a; 
@@ -67,8 +73,6 @@ body {
   display: grid;
   border-bottom: 1px solid #0000003e;
   border-right: 1px solid #0000003e;
-  opacity: 0.6;
-
 }
 
 /* footer styles */
