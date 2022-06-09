@@ -72,6 +72,33 @@ z-index: 2;
   border-right: 1px solid #0000003e;
 }
 
+.grid-size-label {
+  width: 160px;
+}
+
+.control {
+  background-color:rgb(0,0,0,);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  text-shadow: none;
+  border-bottom: 1px solid #0000002a;
+  cursor:pointer;
+}
+
+.control:active {
+
+}
+
+.control-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-family: "Fredericka the Great";
+}
+
 .grid-square {
   border-top: 1px solid rgb(255,255,255);
   border-left: 1px solid rgb(255,255,255);
@@ -87,6 +114,64 @@ z-index: 2;
 }
 
 
+.settings-container {
+  flex-flow: wrap;
+  align-items: center;
+  color: rgb(36, 65, 62);
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 30px 0 0 0;
+}
+
+/* Slider styling */
+.slider {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 10px;
+  border-radius: 5px;  
+  background: #ffffff88;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #ffffff;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="color"] {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: none;
+  padding: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: 1px solid rgb(212, 212, 212);
+  border-radius: 50%;
+}
+
 /* footer styles */
 .footer {
   margin-top: 30px;
@@ -100,5 +185,4 @@ z-index: 2;
   font-size: 24px;
   text-decoration: none;
   text-align: center;
-
 }
