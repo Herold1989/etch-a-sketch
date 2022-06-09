@@ -19,10 +19,7 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 30px;
-  
-  /*Background Photo by Ivan Aleksic on Unsplash: https://unsplash.com/photos/PDRFeeDniCk*/
   background: url(./backround.jpg) no-repeat center center/cover;
-
 }
 
 
@@ -75,6 +72,21 @@ z-index: 2;
   border-right: 1px solid #0000003e;
 }
 
+.grid-square {
+  border-top: 1px solid rgb(255,255,255);
+  border-left: 1px solid rgb(255,255,255);
+  transition: all 0.2s ease;
+}
+
+.grid-square.hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.grid-square.draw {
+  background-color: rgb(255,255,255);
+}
+
+
 /* footer styles */
 .footer {
   margin-top: 30px;
@@ -84,7 +96,9 @@ z-index: 2;
 .footer a,
 .footer hover {
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Helvetica';
-  font-size: 18px;
+  font-family: 'Fredericka the Great';
+  font-size: 24px;
   text-decoration: none;
+  text-align: center;
+
 }
