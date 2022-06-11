@@ -87,10 +87,6 @@ z-index: 2;
   cursor:pointer;
 }
 
-.control:active {
-
-}
-
 .control-container {
   display: flex;
   align-items: center;

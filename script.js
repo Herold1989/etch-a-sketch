@@ -15,8 +15,8 @@ const gridRatio = 2 // Ratio of 1:gridRatio
 
 let mouseDown = false
 
-window.onmousedown = () => mouseDown = true
-window.onmouseup = () => mouseDown = false
+window.onmousedown = () => { mouseDown = true }
+window.onmouseup = () => { mouseDown = false }
 
 let colorChoice = 'Classic'
 
