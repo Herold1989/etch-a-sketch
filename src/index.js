@@ -1,6 +1,7 @@
-
 /* eslint-env browser */
 import './index.css'
+import globals from './globals'
+import pickColor from './pick-color'
 
 const canvasContainer = document.querySelector('.canvas-container')
 const slider = document.querySelector('#grid-slider')
@@ -14,10 +15,10 @@ const colorControl = document.querySelector('#color-control')
 // Variable ratio - wanted to experiment with a wide format, has to be whole numbers or we get weird sized squares
 const gridRatio = 2 // Ratio of 1:gridRatio
 
-let mouseDown = false
+// let mouseDown = false
 
-window.onmousedown = () => { mouseDown = true }
-window.onmouseup = () => { mouseDown = false }
+window.onmousedown = () => { globals.mouseDown = true }
+window.onmouseup = () => { globals.mouseDown = false }
 
 let colorChoice = 'Classic'
 
@@ -29,12 +30,12 @@ const colorPicker = document.createElement('input')
 colorPicker.setAttribute('type', 'color', 'class', 'picker')
 colorPicker.addEventListener('input', pickColor)
 
-let pickedColor = '#000'
+// let pickedColor = '#000'
 
-function pickColor(e) {
-  console.log(e.target.value)
-  pickedColor = e.target.value
-}
+// function pickColor(e) {
+//   console.log(e.target.value)
+//   globals.pickedColor = e.target.value
+// }
 
 function setColor() {
   if (colorChoice === 'Classic') {
@@ -121,7 +122,7 @@ function addSquares(gridSize) {
 }
 
 function mousetrail(e) {
-  if (mouseDown === true) {
+  if (globals.mouseDown === true) {
     setBg(e)
   }
   e.target.classList.add('hover')
@@ -147,7 +148,7 @@ function setBg(e) {
       colourSwatches(e)
     }
     else if (colorChoice === 'Picker') {
-      e.target.style.backgroundColor = pickedColor
+      e.target.style.backgroundColor = globals.pickedColor
     }
 
   // If drawMode is not 'draw', assume it's 'erase' and remove the backbround colour
