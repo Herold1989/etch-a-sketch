@@ -1,5 +1,6 @@
 
 /* eslint-env browser */
+import './index.css'
 
 const canvasContainer = document.querySelector('.canvas-container')
 const slider = document.querySelector('#grid-slider')

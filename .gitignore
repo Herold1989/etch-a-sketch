@@ -112,3 +112,6 @@ lib/
 data/
 Dockerfile
 config/local.*
+
+# dist
+dist

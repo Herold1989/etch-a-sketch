@@ -19,7 +19,7 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 30px;
-  background: url(./backround.jpg) no-repeat center center/cover;
+  background: "./public/img/backround.jpg" no-repeat center center/cover;
 }
 
 
@@ -36,7 +36,7 @@ body {
 
 .app-border {
 /*Photo by engin akyurt on Unsplash*/
-background: url(./wood.jpg) no-repeat center center/cover;
+background: "./public/img/wood.jpg" no-repeat center center/cover;
 position: relative;
 z-index: 2;
 /*background-color: rgb(36, 65, 62);*/
