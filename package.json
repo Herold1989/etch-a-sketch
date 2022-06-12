@@ -1,5 +1,5 @@
 {
-  "name": "jens-boilerplate",
+  "name": "etch-a-sketch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rkahle/jens-boilerplate.git"
+    "url": "git+https://herold1989.github.io/etch-a-sketch.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rkahle/jens-boilerplate/issues"
+    "url": "https://herold1989.github.io/etch-a-sketch/issues"
   },
-  "homepage": "https://github.com/rkahle/jens-boilerplate#readme",
+  "homepage": "https://herold1989.github.io/etch-a-sketch#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
