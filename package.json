@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://herold1989.github.io/etch-a-sketch/issues"
   },
-  "homepage": "https://herold1989.github.io/etch-a-sketch#readme",
+  "homepage": "https://herold1989.github.io/etch-a-sketch/src/index.html",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
