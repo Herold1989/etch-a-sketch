@@ -13,7 +13,7 @@ const modeSelector = document.querySelector('#mode-selector')
 const colorControl = document.querySelector('#color-control')
 
 // Variable ratio - wanted to experiment with a wide format, has to be whole numbers or we get weird sized squares
-const gridRatio = 2 // Ratio of 1:gridRatio
+// const gridRatio = 2 // Ratio of 1:gridRatio
 
 // let mouseDown = false
 
@@ -73,12 +73,12 @@ function setMode() {
   modeSelector.textContent = drawMode
 }
 
-let currentSize = 12
+// let currentSize = 12
 
 // Input default canvas settings
 
 
-defaultCanvas(currentSize, 5, 50)// starting rows, min rows , max rows
+defaultCanvas(globals.currentSize, 5, 50)// starting rows, min rows , max rows
 
 // Setup default canvas
 function defaultCanvas(size, min, max) {
@@ -86,13 +86,13 @@ function defaultCanvas(size, min, max) {
   slider.setAttribute('value', size)
   slider.setAttribute('min', min)
   slider.setAttribute('max', max)
-  gridSizeLabel.textContent = `Grid size: ${size} x ${size * gridRatio}`
+  gridSizeLabel.textContent = `Grid size: ${size} x ${size * globals.gridRatio}`
 }
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function sliderInput() {
-  gridSizeLabel.textContent = `Grid size: ${this.value} x ${this.value * gridRatio}`
-  currentSize = this.value
+  gridSizeLabel.textContent = `Grid size: ${this.value} x ${this.value * globals.gridRatio}`
+  globals.currentSize = this.value
   changeGridSize(this.value)
 }
 
@@ -104,13 +104,13 @@ function changeGridSize(gridSize) {
 // Clear the canvas and then add CSS grid properties to the canvas element
 function setupNewCanvas(gridSize) {
   canvasContainer.innerHTML = ''
-  canvasContainer.style.gridTemplateColumns = `repeat(${gridSize * gridRatio}, 1fr)`
+  canvasContainer.style.gridTemplateColumns = `repeat(${gridSize * globals.gridRatio}, 1fr)`
   canvasContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`
 }
 
 // Add the correct amount of divs to the grid
 function addSquares(gridSize) {
-  for (let i = 1; i <= gridSize * (gridSize * gridRatio); i++) {
+  for (let i = 1; i <= gridSize * (gridSize * globals.gridRatio); i++) {
     const gridSquare = document.createElement('div')
 
     gridSquare.classList.add('grid-square')
